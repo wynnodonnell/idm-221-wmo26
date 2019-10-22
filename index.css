@@ -1,2 +1,8 @@
 h1 {color: navy;
 }
+.primary {
+    color: [100,200,40]
+}
+p .primary {
+    font-size: 16px
+}
