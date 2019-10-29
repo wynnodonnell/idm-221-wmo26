@@ -1,8 +1,7 @@
-h1 {color: navy;
+p {
+    font-family: Arial, Helventica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier;
+    font-size: 150%;
 }
-.primary {
-    color: [100,200,40]
-}
-p .primary {
-    font-size: 16px
-}
+
