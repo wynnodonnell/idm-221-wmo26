@@ -1,60 +1,37 @@
 <!DOCTYPE html>
-<!--Hitting Command / when you have code highlighted it will comment it out-->
-<!--Commenting your code will get you extra credit at the end of the term-->
-
 <html lang="en">
+
+
     <head>
-        <link rel="icon" 
-            type="image/jpg" 
-            href="images/logo.jpg" /><!--This is the icon on the top of the page-->
         <meta charset="UTF-8">
+        <link rel="icon" type="image/jpg" href="images/logo.jpg"><!--This is the icon on the top of the page-->
         <title>Wynn O'Donnell</title><!--This is the text that will appear on the tab in the browser-->
-        <link rel="stylesheet" href="normalize.css"/>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="./index_files/normalize.css"><!--This loads the normaization style sheet for this file-->
+        <link rel="stylesheet" href="./index_files/styles.css"><!--This loads the regular style sheet for this file-->
     </head>
 
-    <body id="top">
-        <header>
-            <p id="heading">
-                Wynn
-                <img  class="myimage" src="images/logo.png" alt="Wynn's Logo">
-                <img  class="myimage" src="images/logo.png" alt="Wynn's Logo">
-                O'Donnell
 
+    <body>
+        <div id="menubar">
+            <a href="index.html">
+                <img class="headerlogo" src="images/logoidea.png" alt="Wynn&#39;s Logo">
+            </a>
+
+            <p class="menu">
+                    <a class="clicky" href="aboutme.html">About Me</a>
+                    <a class="clicky" href="projects.html">My Projects</a>
+                    <a class="clicky" href="photography.html">Photography</a>
+                    <a class="clicky" href="resume.html">My Resume</a>
+                    <a class="clicky" href="contact.html">Contact Me</a>
             </p>
-
-        <p>
-            <a href="aboutme.html">About Me</a>
-            <!--A link to the about me page of my website-->
-        </p>
-
-        <!--An Image. The Alt is the text that appears if the image does not. Heres stuff to do with images
-        *Image Resoution should be 72 on photoshop
-        *Resize images to be the max size you want to display
-        *Always keep the original image
-        *Export on photoshop
-        *Save for Web
-        *Change quality, to where it still looks good but the file size is still very small
-        *Want the best quality image with the smallest possible file size
-        -->
-        <p>
-            <a href="aboutme.html" target="_blank">About Me In New Tab</a>
-            <!--Target windows open in a new tab, if you name them _blank than it will always open in a new tab, if you give it an actual name than it will only open it in a new tab once. This is most useful when linking to other weabsites.-->
-        </p>
-        <intro>
-            <p>
-                I'm Wynn O'Donnell, a Seattle-born design student, currently living in Philadelphia while I attend Drexel University.
+            <p class="line">
+                ____________________________
             </p>
-        </intro>
-        <p>
-            
-        </p>
-        <a href="#top">Return to Top</a>
-        <!--This will return you a certain point in the page, in this case the top of the page. There is an ID on the body titled top...-->
-        <!--Unordered list, browser defaults to bulletpoints-->
-        <!--An Order List, browser defaults to numbers-->
-
         </div>
-        <!--divs take up as much space as possible
-        Spans take up as little space as possible-->
+        <div class="intro">
+            <p>
+                Welcome to my page. I'm Wynn O'Donnell, a Seattle-born design student, currently living in Philadelphia while I attend Drexel University for User Interface and User Experience Design.
+            </p>
+        </div>
+    </body>
 </html>
