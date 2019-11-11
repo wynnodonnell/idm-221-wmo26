@@ -27,6 +27,10 @@
     src: url('font/Roboto-Condenced-Bold.woff') format('woff');
     font-style:bold;
   }
+body{
+  background-image: linear-gradient(grey,white);
+
+}
 
 div#menubar{
     text-align:center;
@@ -38,7 +42,7 @@ div#menubar{
     width: 30rem;
   }
 .clicky{
-    font: bold 2.15rem Roboto-Condenced;
+    font: bold 3rem Roboto-Condenced;
     text-decoration: none;
     background-color: black;
     color: white;
@@ -51,7 +55,6 @@ div#menubar{
 .intro{
     display: block;
     font: normal 3rem Roboto;
-    background-color:white;
     color:black;
     padding:1rem;
     margin:.5rem;
