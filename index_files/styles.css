@@ -4,27 +4,29 @@
 *********************************/
 @font-face {
     font-family: 'Roboto';
-    src: url('font/Roboto-Regular.woff') format('woff');
+    src: url('fonts/Roboto-Regular.woff') format('woff');
+    src: url('fonts/Roboto-Regular.eot') format('');
     font-style:normal;
+
   }
 @font-face {
     font-family: 'Roboto-Black';
-    src: url('font/Roboto-Black.woff') format('woff');
+    src: url('fonts/Roboto-Black.woff') format('woff');
     font-style:normal;
   }
 @font-face {
     font-family: 'Roboto';
-    src: url('font/Roboto-Bold.woff') format('woff');
+    src: url('fonts/Roboto-Bold.woff') format('woff');
     font-style:bold;
   }
 @font-face {
     font-family: 'Roboto';
-    src: url('font/Roboto-Italic.woff') format('woff');
+    src: url('fonts/Roboto-Italic.woff') format('woff');
     font-style:italic;
   }
 @font-face {
     font-family: 'Roboto-Condenced';
-    src: url('font/Roboto-Condenced-Bold.woff') format('woff');
+    src: url('fonts/Roboto-Condenced-Bold.woff') format('woff');
     font-style:bold;
   }
 body{
@@ -42,7 +44,7 @@ div#menubar{
     width: 30rem;
   }
 .clicky{
-    font: bold 3rem Roboto-Condenced;
+    font: bold 3rem Roboto;
     text-decoration: none;
     background-image: linear-gradient(black,grey);
     color: white;
