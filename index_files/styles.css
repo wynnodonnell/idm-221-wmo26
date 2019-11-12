@@ -44,12 +44,12 @@ div#menubar{
 .clicky{
     font: bold 3rem Roboto-Condenced;
     text-decoration: none;
-    background-color: black;
+    background-image: linear-gradient(black,grey);
     color: white;
     padding: .2rem .6rem .2rem .6rem;
 }
 .clicky:hover{
-    color:white;
+    color:grey;
     background-color:grey;
 }
 .intro{
@@ -63,4 +63,18 @@ div#menubar{
 .line{
     text-align: auto;
     font:bold 2.15rem Roboto;
+}
+footer{
+  text-align:center;
+}
+a.bottomtext{
+  color:black;
+  padding:0 2rem;
+}
+p.footy{
+  font:normal 2rem Roboto;
+}
+
+.bottomtext:hover{
+  color:grey;
 }

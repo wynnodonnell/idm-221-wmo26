@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)http://digm.drexel.edu/crs/IDM221/exercises/layouts/index.php/index.php -->
+<html lang="en" class=" fonts-loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Exercises: CSS Layouts | IDM 221</title>
+  <link rel="stylesheet" href="./Exercises_ CSS Layouts _ IDM 221_files/screen.css">
+
+<script>
+	(function() {
+		// Optimization for Repeat Views
+		if( sessionStorage.foutFontsLoaded ) {
+			document.documentElement.className += " fonts-loaded";
+			return;
+		}
+	})();
+</script>
+<script src="./Exercises_ CSS Layouts _ IDM 221_files/fontfaceobserver.js.download"></script>
+<script>
+  var fontA = new FontFaceObserver('SourceSansPro');
+  Promise.all([fontA.load()]).then(function () {
+    document.documentElement.className += " fonts-loaded";
+    sessionStorage.foutFontsLoaded = true;
+  });
+</script>
+
+<script>document.createElement('picture');</script>
+<!-- Picturefill polyfill needed for IE11 `picture` support. -->
+<script src="./Exercises_ CSS Layouts _ IDM 221_files/picturefill.min.js.download"></script>
+<!-- Babel polyfill for IE11 ES6 support. -->
+<script src="./Exercises_ CSS Layouts _ IDM 221_files/polyfill.min.js.download"></script>
+  <link rel="stylesheet" href="./Exercises_ CSS Layouts _ IDM 221_files/prettify.min.css">
+  <link rel="stylesheet" href="./Exercises_ CSS Layouts _ IDM 221_files/screen(1).css">
+<link rel="stylesheet" type="text/css" href="./Exercises_ CSS Layouts _ IDM 221_files/prettify.css"></head>
+<body>
+  <svg style="display: none">
+  <symbol id="previousicon" viewBox="0 0 24 24">
+    <g id="ic_navigate_previous_black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <polygon fill="#6B6175" points="15.41 7.41 14 6 8 12 14 18 15.41 16.59 10.83 12"></polygon>
+      <polygon points="0 0 24 0 24 24 0 24"></polygon>
+    </g>
+  </symbol>
+  <symbol id="nexticon" viewBox="0 0 24 24">
+    <g id="ic_navigate_next_black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <polygon fill="#6B6175" points="10 6 8.59 7.41 13.17 12 8.59 16.59 10 18 16 12"></polygon>
+      <polygon points="0 0 24 0 24 24 0 24"></polygon>
+    </g>
+  </symbol>
+  <symbol id="addicon" viewBox="0 0 14 14">
+    <g id="ic_add_black_24px" transform="translate(187.000000, 450.000000)">
+        <polygon fill="#000000" fill-rule="nonzero" points="19 13 13 13 13 19 11 19 11 13 5 13 5 11 11 11 11 5 13 5 13 11 19 11"></polygon>
+        <polygon points="0 0 24 0 24 24 0 24"></polygon>
+    </g>
+  </symbol>
+  <symbol id="removeicon" viewBox="0 0 14 14">
+    <g id="ic_remove_black_24px" transform="translate(147.000000, 450.000000)">
+        <polygon fill="#000000" fill-rule="nonzero" points="19 13 5 13 5 11 19 11"></polygon>
+        <polygon points="0 0 24 0 24 24 0 24"></polygon>
+    </g>
+  </symbol>
+  <symbol id="check_circle_black" viewBox="0 0 20 20">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-2.000000, -2.000000)">
+            <polygon points="0 0 24 0 24 24 0 24"></polygon>
+            <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M10,17 L5,12 L6.41,10.59 L10,14.17 L17.59,6.58 L19,8 L10,17 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+  </symbol>
+  <symbol id="error_black" viewBox="0 0 20 20">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-2.000000, -2.000000)">
+            <polygon points="0 0 24 0 24 24 0 24"></polygon>
+            <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,17 L11,17 L11,15 L13,15 L13,17 Z M13,13 L11,13 L11,7 L13,7 L13,13 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+  </symbol>
+  <symbol id="info_black" viewBox="0 0 20 20">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-2.000000, -2.000000)">
+            <polygon points="0 0 24 0 24 24 0 24"></polygon>
+            <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M13,17 L11,17 L11,11 L13,11 L13,17 Z M13,9 L11,9 L11,7 L13,7 L13,9 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+  </symbol>
+  <symbol id="warning_black" viewBox="0 0 22 19">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1.000000, -2.000000)">
+            <polygon points="0 0 24 0 24 24 0 24"></polygon>
+            <path d="M1,21 L23,21 L12,2 L1,21 Z M13,18 L11,18 L11,16 L13,16 L13,18 Z M13,14 L11,14 L11,10 L13,10 L13,14 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+  </symbol>
+  <symbol id="icon_close_black" viewBox="0 0 14 14">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-5.000000, -5.000000)">
+            <polygon fill="#000000" fill-rule="nonzero" points="19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12"></polygon>
+            <polygon points="0 0 24 0 24 24 0 24"></polygon>
+        </g>
+    </g>
+  </symbol>
+  <symbol id="icon_close_white" viewBox="0 0 14 14">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-5.000000, -5.000000)">
+            <polygon fill="#ffffff" fill-rule="nonzero" points="19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12"></polygon>
+            <polygon points="0 0 24 0 24 24 0 24"></polygon>
+        </g>
+    </g>
+  </symbol>
+  <symbol id="searchicon-white" viewBox="0 0 24 24">
+      <g>
+        <path d="M15.5,14 L14.71,14 L14.43,13.73 C15.41,12.59 16,11.11 16,9.5 C16,5.91 13.09,3 9.5,3 C5.91,3 3,5.91 3,9.5 C3,13.09 5.91,16 9.5,16 C11.11,16 12.59,15.41 13.73,14.43 L14,14.71 L14,15.5 L19,20.49 L20.49,19 L15.5,14 Z M9.5,14 C7.01,14 5,11.99 5,9.5 C5,7.01 7.01,5 9.5,5 C11.99,5 14,7.01 14,9.5 C14,11.99 11.99,14 9.5,14 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <polygon fill="none" points="0 0 24 0 24 24 0 24"></polygon>
+      </g>
+    </symbol>
+</svg>
+  <header role="banner" class="header">
+    <div class="header__agency">
+      <p>IDM 221</p>
+    </div>
+  </header>
+
+  <section class="compass">
+    <p>CSS Layouts</p>
+  </section>
+
+  <main role="main">
+    <div class="container">
+      <h1>CSS Layouts</h1>
+      <p>Complete the following exercises related to CSS layouts.</p>
+
+      <section>
+        <h2>Exercise 1</h2>
+        <p>Using the CSS <code>position</code> property, program a CSS selector that positions the page's <code>header</code> element in the top left corner of the page. If the user scrolls the page, the <code>header</code> will scroll/move with the rest of the content. </p>
+        <p class="small"><small>Note: program your selectors in alphabetical order.</small></p>
+        <div class="kc_text">
+          <div class="kc_text__input">
+            <textarea name="ex001" id="ex001" cols="30" rows="5" class="full"></textarea>
+          </div>
+          <div class="feedback alert alert-success" data-feedbackfor="ex001">
+            <div class="alert-content"><p><b>Correct!</b></p></div>
+          </div>
+          <button class="btn btn_feedback" data-assert="ex001">Feedback</button>
+          <div data-solution="ex001" hidden="">
+            header {
+              left: 0;
+              position: absolute;
+              top: 0;
+            }
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Exercise 2</h2>
+        <p>Using the CSS <code>position</code> property, program a CSS selector that positions the page's <code>footer</code> element in the bottom left corner of the page. If the user scrolls the page, the <code>footer</code> will <b>not</b> scroll/move with the rest of the content. </p>
+        <p class="small"><small>Note: program your selectors in alphabetical order.</small></p>
+        <div class="kc_text">
+          <div class="kc_text__input">
+            <textarea name="ex002" id="ex002" cols="30" rows="5" class="full"></textarea>
+          </div>
+          <div class="feedback alert" data-feedbackfor="ex002" hidden="">
+            <div class="alert-content"></div>
+          </div>
+          <button class="btn btn_feedback" data-assert="ex002">Feedback</button>
+          <div data-solution="ex002" hidden="">
+            footer {
+              bottom: 0;
+              left: 0;
+              position: fixed;
+            }
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Exercise 3</h2>
+        <p>Using the CSS <code>position</code> property, program a CSS selector that moves an element with an <code>id</code> equal to <b>hero</b> down 32px from it's current position. </p>
+        <p class="small"><small>Note: program your selectors in alphabetical order, and all measurements should be expressed in <code>rem</code> units. You can assume the follow CSS.</small></p>
+        <pre class="prettyprint prettyprinted" style=""><span class="pln">html </span><span class="pun">{</span><span class="pln"> 
+  font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%;</span><span class="pln"> 
+</span><span class="pun">}</span></pre>
+        <div class="kc_text">
+          <div class="kc_text__input">
+            <textarea name="ex003" id="ex003" cols="30" rows="4" class="full"></textarea>
+          </div>
+          <div class="feedback alert" data-feedbackfor="ex003" hidden="">
+            <div class="alert-content"></div>
+          </div>
+          <button class="btn btn_feedback" data-assert="ex003">Feedback</button>
+          <div data-solution="ex003" hidden="">
+            #hero {
+              position: relative;
+              top: 2rem;
+            }
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Exercise 4</h2>
+        <p>I have the following HTML structure:</p>
+        <pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col"</span><span class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col"</span><span class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col"</span><span class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col"</span><span class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></pre>
+        <p>Program a CSS selector that will position each of the <code>.col</code> elements next to each other, so that all four fit together in a single line. </p>
+        <p class="small"><small>Note: program your selectors in alphabetical order.</small></p>
+        <div class="kc_text">
+          <div class="kc_text__input">
+            <textarea name="ex004" id="ex004" cols="30" rows="4" class="full"></textarea>
+          </div>
+          <div class="feedback alert" data-feedbackfor="ex004" hidden="">
+            <div class="alert-content"></div>
+          </div>
+          <button class="btn btn_feedback" data-assert="ex004">Feedback</button>
+          <div data-solution="ex004" hidden="">
+            .col {
+              float: left;
+              width: 25%;
+            }
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Exercise 5</h2>
+        <p>I have the following HTML structure:</p>
+        <pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wrapper"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;main&gt;&lt;/main&gt;</span><span class="pln">
+  </span><span class="tag">&lt;aside&gt;&lt;/aside&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></pre>
+        <p>Program a CSS selector that will position the <code>main</code> and <code>aside</code> elements next to each other. Also - add 32px of <code>padding</code> on all four sides of both elements. </p>
+        <p class="small"><small>Note: program your selectors in alphabetical order, and all measurements should be expressed in <code>rem</code> units. You can assume the follow CSS.</small></p>
+        <pre class="prettyprint prettyprinted" style=""><span class="pln">html </span><span class="pun">{</span><span class="pln"> 
+  font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%;</span><span class="pln"> 
+</span><span class="pun">}</span></pre>
+        <div class="kc_text">
+          <div class="kc_text__input">
+            <textarea name="ex005" id="ex005" cols="30" rows="4" class="full"></textarea>
+          </div>
+          <div class="feedback alert" data-feedbackfor="ex005" hidden="">
+            <div class="alert-content"></div>
+          </div>
+          <button class="btn btn_feedback" data-assert="ex005">Feedback</button>
+          <div data-solution="ex005" hidden="">
+            aside, main {
+              float: left;
+              padding: 2rem;
+            }
+          </div>
+          <h3>Part 2</h3>
+          <p><i>Program two CSS selectors:</i></p>
+          <ol>
+            <li>Set the width of the <code>aside</code> element to be a quarter of the available space.</li>
+            <li>Set the width of the <code>main</code> element to fill the remaining available space.</li>
+          </ol>
+          <div class="kc_text">
+            <div class="kc_text__input">
+              <textarea name="ex005b" id="ex005b" cols="30" rows="4" class="full"></textarea>
+            </div>
+            <div class="feedback alert" data-feedbackfor="ex005b" hidden="">
+              <div class="alert-content"></div>
+            </div>
+            <button class="btn btn_feedback" data-assert="ex005b">Feedback</button>
+            <div data-solution="ex005b" hidden="">
+              aside {
+                width: 25%;
+              }
+              main {
+                width: 75%;
+              }
+            </div>
+            <h3>Part 3</h3>
+            <p>Program a CSS selectors that will fix the size calculations so the elements all fit on one line.</p>
+            <p class="small"><small>Note: this is done with the <b>universal selector</b> and a property covered when we discussed <b>box model</b>.</small></p>
+            <div class="kc_text">
+              <div class="kc_text__input">
+                <textarea name="ex005c" id="ex005c" cols="30" rows="4" class="full"></textarea>
+              </div>
+              <div class="feedback alert" data-feedbackfor="ex005c" hidden="">
+                <div class="alert-content"></div>
+              </div>
+              <button class="btn btn_feedback" data-assert="ex005c">Feedback</button>
+              <div data-solution="ex005c" hidden="">
+                * {
+                  box-sizing: border-box;
+                }
+              </div>
+        </div>
+      </div></div></section>
+
+    </div> <!-- ./container -->
+  </main>
+
+  <script src="./Exercises_ CSS Layouts _ IDM 221_files/main.js.download"></script>
+  <script src="./Exercises_ CSS Layouts _ IDM 221_files/run_prettify.min.js.download"></script>
+
+
+
+</body></html>
