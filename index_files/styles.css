@@ -83,3 +83,7 @@ p.footy{
   margin-right: auto;
   width: 60rem;
 }
+p.title{
+  font:normal 2rem Roboto;
+  padding: .2rem .6rem .2rem .6rem;
+}
