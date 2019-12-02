@@ -87,3 +87,13 @@ p.title{
   font:normal 2rem Roboto;
   padding: .2rem .6rem .2rem .6rem;
 }
+.selfphoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 58rem;
+}
+p.cap{
+  font:normal 3rem Roboto;
+  padding: .2rem .6rem .2rem .6rem;
+}
