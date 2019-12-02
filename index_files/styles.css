@@ -4,8 +4,8 @@
 *********************************/
 @font-face {
     font-family: 'Roboto';
-    src: url('fonts/Roboto-Regular.woff') format('woff');
-    src: url('fonts/Roboto-Regular.eot') format('');
+    src: url('fonts/roboto-regular-webfont.woff') format('woff');
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2');
     font-style:normal;
 
   }
@@ -45,14 +45,11 @@ div#menubar{
   }
 .clicky{
     font: bold 3rem Roboto;
-    text-decoration: none;
-    background-image: linear-gradient(black,grey);
-    color: white;
+    color:black;
     padding: .2rem .6rem .2rem .6rem;
 }
 .clicky:hover{
     color:grey;
-    background-color:grey;
 }
 .intro{
     display: block;
@@ -79,4 +76,10 @@ p.footy{
 
 .bottomtext:hover{
   color:grey;
+}
+.selfphoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60rem;
 }
