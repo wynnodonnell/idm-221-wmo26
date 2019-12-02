@@ -30,8 +30,8 @@
     font-style:bold;
   }
 body{
-  background-image: linear-gradient(grey,white);
-
+  /*background-image: linear-gradient(grey,white);*/
+  background-color:white;
 }
 
 div#menubar{
@@ -97,3 +97,34 @@ p.cap{
   font:normal 3rem Roboto;
   padding: .2rem .6rem .2rem .6rem;
 }
+
+img.portraits {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60rem;
+}
+p.pre{
+  font:normal 2.4rem Roboto;
+  padding: .2rem .6rem .2rem .6rem;
+}
+
+.experience {
+  padding-left:4rem;
+  font:normal 2.5rem Roboto;
+}
+
+ul.normal {
+  list-style-type: none;
+  font:normal 2.5rem Roboto;
+}
+.change{
+  background-color:#fbfbfb;
+}
+/*Fix this when fonts are working*/
+.bold {
+  font-weight: bold;
+}
+/*Fix this when fonts are working*/
+
+
