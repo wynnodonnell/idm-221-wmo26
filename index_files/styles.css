@@ -50,7 +50,11 @@ div#menubar{
 .clicky{
     font: bold 3rem Roboto;
     color:#F4F8FF;
-    padding: .2rem .6rem .2rem .6rem;
+    padding: .2rem 1rem .2rem 1rem;
+    border-left:3px solid white;
+}
+#check{
+  border-left:0 solid white;
 }
 .clicky:hover{
     color:grey;
@@ -143,7 +147,6 @@ li{
   bottom:0;
   width:100%;
   background:#1A202C;
-  margin-block-start: 0;
   margin-block-end: 0;
   color:#F4F8FF;
   font:normal 2.5rem Roboto;
