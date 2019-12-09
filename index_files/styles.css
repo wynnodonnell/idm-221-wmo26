@@ -51,10 +51,10 @@ div#menubar{
     font: bold 3rem Roboto;
     color:#F4F8FF;
     padding: .2rem 1rem .2rem 1rem;
-    border-left:3px solid white;
+    border-left:3px solid #F4F8FF;
 }
 #check{
-  border-left:0 solid white;
+  border-left:0 solid #F4F8FF;
 }
 .clicky:hover{
     color:grey;
@@ -66,11 +66,11 @@ div#menubar{
     padding:1rem;
 }
 div.intro{
-  border-bottom:5px solid white;
+  border-bottom:5px solid #F4F8FF;
   background-color: #1A202C;
 }
 .introdif{
-  border-bottom:5px solid white;
+  border-bottom:5px solid #F4F8FF;
   display: block;
   font: normal 3rem Roboto;
   color:#F4F8FF;
@@ -82,8 +82,7 @@ footer{
   padding-bottom:7.5rem;
 }
 a.bottomtext{
-  color:#F4F8FF;;
-  padding:0 2rem;
+  color:#F4F8FF;
 }
 p.footy{
   font:normal 2rem Roboto;
@@ -131,15 +130,17 @@ ul.normal {
 }
 li{
   font:normal 2.5rem Roboto;
-  color:white;
+  color:#F4F8FF;
 }
 .change{
-  border-bottom:5px solid white;
+  border-bottom:5px solid #F4F8FF;
   background-color:#1A202C;
+  padding-top:1rem;
+  padding-bottom:1.5rem;
 }
 /*Fix this when fonts are working*/
 .bold {
-  font:bold 2.5rem Roboto;
+  font:bold 2.5rem Roboto-condenced;
 }
 
 .menu{
