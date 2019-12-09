@@ -4,38 +4,42 @@
 *********************************/
 @font-face {
     font-family: 'Roboto';
-    src: url('fonts/roboto-regular-webfont.woff') format('woff');
-    src: url('fonts/roboto-regular-webfont.woff2') format('woff2');
+    src: url('../fonts/roboto-regular-webfont.woff') format('woff');
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2');
     font-style:normal;
 
   }
 @font-face {
     font-family: 'Roboto-Black';
-    src: url('fonts/Roboto-Black.woff') format('woff');
+    src: url('../fonts/roboto-black-webfont.woff') format('woff');
+    src: url('../fonts/roboto-black-webfont.woff2') format('woff2');
     font-style:normal;
   }
 @font-face {
     font-family: 'Roboto';
-    src: url('fonts/Roboto-Bold.woff') format('woff');
+    src: url('../fonts/roboto-bold-webfont.woff') format('woff');
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2');
     font-style:bold;
   }
 @font-face {
     font-family: 'Roboto';
-    src: url('fonts/Roboto-Italic.woff') format('woff');
+    src: url('../fonts/roboto-italic-webfont.woff') format('woff');
+    src: url('../fonts/roboto-italic-webfont.woff2') format('woff2');
     font-style:italic;
   }
 @font-face {
     font-family: 'Roboto-Condenced';
-    src: url('fonts/Roboto-Condenced-Bold.woff') format('woff');
+    src: url('../fonts/roboto-boldcondensed-webfont.woff') format('woff');
+    src: url('../fonts/roboto-boldcondensed-webfont.woff2') format('woff2');
     font-style:bold;
   }
 body{
-  /*background-image: linear-gradient(grey,white);*/
-  background-color:white;
+  background-color:#191C21;
 }
 
 div#menubar{
     text-align:center;
+    border-bottom: 5px solid #F4F8FF;
 }
 .headerlogo {
     display: block;
@@ -45,7 +49,7 @@ div#menubar{
   }
 .clicky{
     font: bold 3rem Roboto;
-    color:black;
+    color:#F4F8FF;
     padding: .2rem .6rem .2rem .6rem;
 }
 .clicky:hover{
@@ -54,20 +58,27 @@ div#menubar{
 .intro{
     display: block;
     font: normal 3rem Roboto;
-    color:black;
+    color:#F4F8FF;
     padding:1rem;
-    margin:.5rem;
-
 }
-.line{
-    text-align: auto;
-    font:bold 2.15rem Roboto;
+div.intro{
+  border-bottom:5px solid white;
+  background-color: #1A202C;
+}
+.introdif{
+  border-bottom:5px solid white;
+  display: block;
+  font: normal 3rem Roboto;
+  color:#F4F8FF;
+  padding:1rem;
 }
 footer{
   text-align:center;
+  color:#F4F8FF;
+  padding-bottom:7.5rem;
 }
 a.bottomtext{
-  color:black;
+  color:#F4F8FF;;
   padding:0 2rem;
 }
 p.footy{
@@ -87,14 +98,10 @@ p.title{
   font:normal 2rem Roboto;
   padding: .2rem .6rem .2rem .6rem;
 }
-.selfphoto {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 58rem;
-}
+
 p.cap{
   font:normal 3rem Roboto;
+  color:#F4F8FF;
   padding: .2rem .6rem .2rem .6rem;
 }
 
@@ -107,6 +114,7 @@ img.portraits {
 p.pre{
   font:normal 2.4rem Roboto;
   padding: .2rem .6rem .2rem .6rem;
+  color: #F4F8FF;
 }
 
 .experience {
@@ -116,15 +124,35 @@ p.pre{
 
 ul.normal {
   list-style-type: none;
+}
+li{
   font:normal 2.5rem Roboto;
+  color:white;
 }
 .change{
-  background-color:#fbfbfb;
+  border-bottom:5px solid white;
+  background-color:#1A202C;
 }
 /*Fix this when fonts are working*/
 .bold {
-  font-weight: bold;
+  font:bold 2.5rem Roboto;
 }
-/*Fix this when fonts are working*/
+
+.menu{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:#1A202C;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color:#F4F8FF;
+  font:normal 2.5rem Roboto;
+  padding: 2rem 0rem;
+  border-top:5px solid #F4F8FF;
+}
+
+div.photos{
+  border-top:5px solid #F4F8FF;
+}
 
 
