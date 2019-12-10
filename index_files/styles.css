@@ -45,13 +45,13 @@ div#menubar{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30rem;
+    width: 50%;
   }
 .clicky{
-    font: bold 3rem Roboto;
+    font: bold 1.2rem Roboto;
     color:#F4F8FF;
-    padding: .2rem 1rem .2rem 1rem;
-    border-left:3px solid #F4F8FF;
+    padding: .2rem .4rem .2rem .4rem;
+    border-left:2px solid #F4F8FF;
 }
 #check{
   border-left:0 solid #F4F8FF;
@@ -61,7 +61,7 @@ div#menubar{
 }
 .intro{
     display: block;
-    font: normal 3rem Roboto;
+    font: normal 1rem Roboto;
     color:#F4F8FF;
     padding:1rem;
 }
@@ -72,38 +72,45 @@ div.intro{
 .introdif{
   border-bottom:5px solid #F4F8FF;
   display: block;
-  font: normal 3rem Roboto;
+  font: normal 1rem Roboto;
   color:#F4F8FF;
   padding:1rem;
 }
 footer{
   text-align:center;
   color:#F4F8FF;
-  padding-bottom:7.5rem;
+  padding-bottom:4rem;
 }
 a.bottomtext{
   color:#F4F8FF;
+  padding: 0 1.5rem;
+}
+a.bottomtext2{
+  color:#F4F8FF;
 }
 p.footy{
-  font:normal 2rem Roboto;
+  font:normal 1rem Roboto;
 }
 
 .bottomtext:hover{
+  color:grey;
+}
+.bottomtext2:hover{
   color:grey;
 }
 .selfphoto {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60rem;
+  width: 95%;
 }
 p.title{
-  font:normal 2rem Roboto;
+  font:normal 1.5rem Roboto;
   padding: .2rem .6rem .2rem .6rem;
 }
 
 p.cap{
-  font:normal 3rem Roboto;
+  font:normal 1.5rem Roboto;
   color:#F4F8FF;
   padding: .2rem .6rem .2rem .6rem;
 }
@@ -112,24 +119,24 @@ img.portraits {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60rem;
+  width: 95%;
 }
 p.pre{
-  font:normal 2.4rem Roboto;
+  font:normal 1.2rem Roboto;
   padding: .2rem .6rem .2rem .6rem;
   color: #F4F8FF;
 }
 
 .experience {
   padding-left:4rem;
-  font:normal 2.5rem Roboto;
+  font:normal 1rem Roboto;
 }
 
 ul.normal {
   list-style-type: none;
 }
 li{
-  font:normal 2.5rem Roboto;
+  font:normal 1rem Roboto;
   color:#F4F8FF;
 }
 .change{
@@ -138,9 +145,9 @@ li{
   padding-top:1rem;
   padding-bottom:1.5rem;
 }
-/*Fix this when fonts are working*/
+
 .bold {
-  font:bold 2.5rem Roboto-condenced;
+  font:bold 1.2rem Roboto-condenced;
 }
 
 .menu{
@@ -151,7 +158,7 @@ li{
   margin-block-end: 0;
   color:#F4F8FF;
   font:normal 2.5rem Roboto;
-  padding: 2rem 0rem;
+  padding: 0rem 0rem .75rem;
   border-top:5px solid #F4F8FF;
 }
 
