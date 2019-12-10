@@ -48,7 +48,7 @@ div#menubar{
     width: 50%;
   }
 .clicky{
-    font: bold 1.2rem Roboto;
+    font: bold 1.15rem Roboto;
     color:#F4F8FF;
     padding: .2rem .4rem .2rem .4rem;
     border-left:2px solid #F4F8FF;
@@ -63,11 +63,12 @@ div#menubar{
     display: block;
     font: normal 1rem Roboto;
     color:#F4F8FF;
-    padding:1rem;
+
 }
 div.intro{
   border-bottom:5px solid #F4F8FF;
   background-color: #1A202C;
+  padding:1rem;
 }
 .introdif{
   border-bottom:5px solid #F4F8FF;
@@ -120,6 +121,7 @@ img.portraits {
   margin-left: auto;
   margin-right: auto;
   width: 95%;
+  padding-bottom:1rem;
 }
 p.pre{
   font:normal 1.2rem Roboto;
@@ -143,9 +145,13 @@ li{
   border-bottom:5px solid #F4F8FF;
   background-color:#1A202C;
   padding-top:1rem;
-  padding-bottom:1.5rem;
+  padding-bottom:1.2rem;
 }
-
+.change2{
+  border-bottom:5px solid #F4F8FF;
+  padding-top:1rem;
+  padding-bottom:1.2rem;
+}
 .bold {
   font:bold 1.2rem Roboto-condenced;
 }
@@ -163,7 +169,18 @@ li{
 }
 
 div.photos{
-  border-top:5px solid #F4F8FF;
+  border-bottom:5px solid #F4F8FF;
+}
+div.photos2{
+  border-bottom:5px solid #F4F8FF;
+  background-color:#1A202C;
+  padding-top:.5rem;
+}
+p.photocap{
+  display: block;
+  font: normal 1rem Roboto;
+  color:#F4F8FF;
+  padding-left:.75rem
 }
 
 
