@@ -48,7 +48,7 @@ div#menubar{
     width: 50%;
   }
 .clicky{
-    font: bold 1.15rem Roboto;
+    font: bold 1.5rem Roboto;
     color:#F4F8FF;
     padding: .2rem .4rem .2rem .4rem;
     border-left:2px solid #F4F8FF;
@@ -180,7 +180,7 @@ p.photocap{
   display: block;
   font: normal 1rem Roboto;
   color:#F4F8FF;
-  padding-left:.75rem
+  padding:0 .75rem;
 }
 
 
