@@ -2,6 +2,11 @@
 * Description: Primary style sheet
 * Author: Wynn O'Donnell
 *********************************/
+
+/*Reading code comments eh? must be a slow day at work
+
+
+This next part is to import all the fonts that I need into my style sheets*/
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/roboto-regular-webfont.woff') format('woff');
@@ -10,22 +15,10 @@
 
   }
 @font-face {
-    font-family: 'Roboto-Black';
-    src: url('../fonts/roboto-black-webfont.woff') format('woff');
-    src: url('../fonts/roboto-black-webfont.woff2') format('woff2');
-    font-style:normal;
-  }
-@font-face {
     font-family: 'Roboto';
     src: url('../fonts/roboto-bold-webfont.woff') format('woff');
     src: url('../fonts/roboto-bold-webfont.woff2') format('woff2');
     font-style:bold;
-  }
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/roboto-italic-webfont.woff') format('woff');
-    src: url('../fonts/roboto-italic-webfont.woff2') format('woff2');
-    font-style:italic;
   }
 @font-face {
     font-family: 'Roboto-Condenced';
@@ -33,38 +26,51 @@
     src: url('../fonts/roboto-boldcondensed-webfont.woff2') format('woff2');
     font-style:bold;
   }
+
+/*This guy just makes the background color that weird navy blue that I chose for some reason*/
 body{
   background-color:#191C21;
 }
 
+/*This guy is for my menu bar, and makes all the text in the middle instead of on the side. Also adds a nice white line below the header*/
 div#menubar{
     text-align:center;
     border-bottom: 5px solid #F4F8FF;
 }
+
+/*this one tells the logo at the top of my page to be in a certain place, the center, and a certain size, 50%*/
 .headerlogo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
+
+/*This little piggy is for the menubar at the bottom of the screen, it makes it the right font and size, the right font color, makes the words not to squished together, and makes the lines inbetween the words.*/
 .clicky{
     font: bold 1.5rem Roboto;
     color:#F4F8FF;
     padding: .2rem .4rem .2rem .4rem;
     border-left:2px solid #F4F8FF;
 }
+
+/*This little piggy is to make it so that the Home button in the menu bar doesn't have a border line next to it, even though the other ones do*/
 #check{
   border-left:0 solid #F4F8FF;
 }
+
+/*Makes the links on my menu bar turn grey when you hover over them*/
 .clicky:hover{
     color:grey;
 }
+
+/*this one sets the corrent font and size for my main body text paragraphs, and the correct font color*/
 .intro{
-    display: block;
     font: normal 1rem Roboto;
     color:#F4F8FF;
-
 }
+
+/*makes it so if the intro tag is used on a div it adds a white border to the bottom, and changes the background color to a different blue. Also adds padding to the intro divs so the text doesn't just go to the edge*/
 div.intro{
   border-bottom:5px solid #F4F8FF;
   background-color: #1A202C;
