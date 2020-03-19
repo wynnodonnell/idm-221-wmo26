@@ -29,7 +29,9 @@ This next part is to import all the fonts that I need into my style sheets*/
 
 /*This guy just makes the background color that weird navy blue that I chose for some reason*/
 body{
+  margin: auto;
   background-color:#191C21;
+  max-width: 40rem;
 }
 
 /*This guy is for my menu bar, and makes all the text in the middle instead of on the side. Also adds a nice white line below the header*/
@@ -76,6 +78,8 @@ div.intro{
   background-color: #1A202C;
   padding:1rem;
 }
+
+/*basically like the intro tag, but a different background color*/
 .introdif{
   border-bottom:5px solid #F4F8FF;
   display: block;
@@ -83,6 +87,7 @@ div.intro{
   color:#F4F8FF;
   padding:1rem;
 }
+
 footer{
   text-align:center;
   color:#F4F8FF;
@@ -172,6 +177,7 @@ li{
   font:normal 2.5rem Roboto;
   padding: 0rem 0rem .75rem;
   border-top:5px solid #F4F8FF;
+  max-width: 40rem;
 }
 
 div.photos{
